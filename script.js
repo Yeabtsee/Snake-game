@@ -36,7 +36,7 @@ function direction(e){
 }
 
 //call the playgame function every 100ms
-// this will redraw the snake every  
+// this will redraw the snake every 100ms 
 let playGame = setInterval(drawGame,100);
 
 function drawGame(){
@@ -86,7 +86,6 @@ function drawGame(){
        snake.pop();// remove the last element
     }
 
-
     // create new head
     let newHead = {
         x:snakeX,
@@ -96,7 +95,6 @@ function drawGame(){
         clearInterval(playGame);
         alert('Game Over');
     }
-    
     snake.unshift(newHead);// add the new head element
 
     }
